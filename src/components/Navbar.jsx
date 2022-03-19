@@ -12,10 +12,10 @@ import Hamburger from 'hamburger-react'
 
 
 const navigationLinks = [
-    {name: 'Home', href: '../'},
-    {name: 'Galerie', href: '../photos'},
-    {name: 'Servicii', href: '../prices'},
-    {name: 'Contact', href: '../contact'},
+    {name: 'Home', href: '../pages'},
+    {name: 'Galerie', href: '../pages/photos'},
+    {name: 'Servicii', href: '../pages/prices'},
+    {name: 'Contact', href: '../pages/contact'},
 ];
 
 
