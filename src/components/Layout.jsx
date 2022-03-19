@@ -24,7 +24,6 @@ export default function Layout({children}) {
     const styles = useStyle();
   return (
         <CssBaseline>
-            <Box component='body' maxWidth='xl' className={styles.layout}>
                 <Navbar/>
                 <div>
                     {children}
@@ -33,7 +32,7 @@ export default function Layout({children}) {
                 <footer className={styles.footer}>
                     <Typography variant='h5' component='p'>© 2022 Squirfox - All Rights Reserved</Typography>
                 </footer>
-            </Box>
+
         </CssBaseline>
   )
 }
