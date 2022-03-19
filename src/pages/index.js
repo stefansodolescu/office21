@@ -20,7 +20,7 @@ const useStyles = makeStyles(() => ({
     backgroundSize: 'cover',
     objectFit: 'contain',
     width: '100%',
-    height: '50vh',
+    height: '100%',
     position: 'absolute',
     zIndex: 0,
   },
