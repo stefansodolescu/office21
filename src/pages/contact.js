@@ -38,8 +38,8 @@ export default function Contact() {
           <Grid item xs>
             <Box>
               <Typography component='h6' variant='h6' sx={{fontWeight:700}}>
-              <IconButton size='large'>
-                    <WhatsAppIcon href='https://wa.me/767921555' color='success' sx={{fontSize:40}}/>
+              <IconButton href='https://wa.me/767921555'  size='large'>
+                    <WhatsAppIcon color='success' sx={{fontSize:40}}/>
                 </IconButton>
                 Telefon:<Typography variant='subtitle1' component='p'><Link underline='hover' href='tel:0767921555' sx={{color: 'black'}}>0767921555</Link></Typography>
               </Typography>
