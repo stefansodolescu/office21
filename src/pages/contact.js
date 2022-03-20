@@ -1,7 +1,13 @@
-import { Grid, Typography, Container, Paper, Box } from '@mui/material'
+import { Grid, Typography, Container, Paper, Box, ButtonGroup, IconButton, Link } from '@mui/material'
 import React from 'react'
 import Layout from '../components/Layout'
 import { makeStyles } from '@mui/styles'
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import { StaticImage } from 'gatsby-plugin-image';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import EmailIcon from '@mui/icons-material/Email';
+
 
 
 const useStyles = makeStyles(() => ({
@@ -16,27 +22,57 @@ const useStyles = makeStyles(() => ({
       margin: '10px'
       
     },
-
-
-
 }));
 
 export default function Contact() {
   const styles = useStyles();
   return (
     <Layout>
-      <Container maxWidth='xl' sx={{backgroundColor: 'white', padding:'20px'}}>
-        <Grid container spacing={1} direction={{xs: 'column', md:'row' }} alignItems='left' justifyContent='space-around'>
+      <Container maxWidth='lg' sx={{backgroundColor: 'white', padding:'20px'}}>
+        <Grid container spacing={4} direction={{xs:'column', md:'row'}} alignItems='left' justifyContent='space-around'>
           <Grid item xs={12} sx={{textAlign: 'center'}}>
             <Paper className={styles.paper} elevation={24} variant='outlined' sx={{backgroundColor: 'black', color:'white'}}>
               <Typography variant='h4'>Contact us</Typography>
             </Paper>
           </Grid>
-          <Grid item xs={6}>
-            <Typography>Contact us</Typography>
+          <Grid item xs>
+            <Box>
+              <Typography component='h6' variant='h6' sx={{fontWeight:700}}>
+              <IconButton size='large'>
+                    <WhatsAppIcon href='https://wa.me/767921555' color='success' sx={{fontSize:40}}/>
+                </IconButton>
+                Telefon:<Typography variant='subtitle1' component='p'><Link underline='hover' href='tel:0767921555' sx={{color: 'black'}}>0767921555</Link></Typography>
+              </Typography>
+              <Typography component='h6' variant='h6' sx={{fontWeight:700}}>  
+                <IconButton href= 'https://ul.waze.com/ul?place=ChIJGaHc6LgBskARx7xzfiEQo5E&ll=44.45101810%2C26.05478720&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location' size='large'>
+                    <StaticImage style={{height:'40px', width: '40px'}}src='https://stefan-test-2021.s3.eu-west-1.amazonaws.com/office21/icons/waze(2).png' alt='waze icon'/>
+                </IconButton>
+                Adresa:<Typography variant='subtitle1' component='p'>Strada Inginer Cristian Pascal 34, București</Typography>
+              </Typography>
+              <Typography component='h6' variant='h6' sx={{fontWeight:700}}>
+              <IconButton href='mailto:contact@office21.ro' size='large'>
+                    <EmailIcon sx={{fontSize: 40, color: 'black'}}/>
+                </IconButton>
+                Email:<Typography variant='body1' component='p'>contact@office21.ro</Typography>
+              </Typography>
+            </Box>
           </Grid>
-          <Grid item xs={6}>
-            <Typography>Contact us</Typography>
+          <Grid item xs>
+            <Box>
+              <Typography component='h6' variant='h6' sx={{fontWeight:700}}>Program:</Typography>
+              <Typography component='h6' variant='h6' sx={{fontWeight:700}}>Luni-Vineri:<Typography variant='subtitle1' component='p'>10:00-22:00</Typography></Typography>
+              <Typography component='h6' variant='h6' sx={{fontWeight:700}}>Sambata:<Typography variant='subtitle1' component='p'>10:00-18:00</Typography></Typography>
+              <Typography component='h6' variant='h6' sx={{fontWeight:700}}>Duminica:<Typography variant='subtitle1' component='p'>Inchis</Typography></Typography>
+              <Typography component='h6' variant='h6' sx={{fontWeight:700}}>Urmareste-ne pe:</Typography>
+              <ButtonGroup>
+                <IconButton href='https://www.facebook.com/office21barbershop/' size='large'>
+                  <FacebookIcon color='primary' sx={{fontSize: 40}}/>
+                </IconButton>
+                <IconButton href='https://www.instagram.com/office21barber/' size='large'>
+                  <InstagramIcon color='secondary' sx={{fontSize: 40}}/>
+                </IconButton>
+              </ButtonGroup>
+            </Box>
           </Grid>
           <Grid item xs={12}>
           <Box

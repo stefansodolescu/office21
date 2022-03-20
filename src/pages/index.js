@@ -81,7 +81,7 @@ export default function Home() {
                Welcome to Office21!
               </Typography>
               <Box my={4}>
-                <Button href='https://wa.me/743041295' size='large' variant='contained' color='success' endIcon={<WhatsAppIcon sx={{fontSize: 60}} />}>Programeaza-te!</Button>
+                <Button href='https://wa.me/767921555' size='large' variant='contained' color='success' endIcon={<WhatsAppIcon sx={{fontSize: 60}} />}>Programeaza-te!</Button>
               </Box>
 
           </Container>
