@@ -33,7 +33,9 @@ const [isOpen, setOpen] = useState(false)
                 height: 80,
                 width: 150,
             }}  >
-                <StaticImage alt="logo" src ='https://stefan-test-2021.s3.eu-west-1.amazonaws.com/office21/logooffice.png'/>
+                <Link href='../' underline='none'> 
+                    <StaticImage alt="logo" src ='https://stefan-test-2021.s3.eu-west-1.amazonaws.com/office21/logooffice.png'/>
+                </Link>
             </Avatar> 
             <Hidden smDown>
             {navigationLinks.map((item) => (
