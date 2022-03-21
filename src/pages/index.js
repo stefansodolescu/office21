@@ -16,7 +16,7 @@ const useStyles = makeStyles(() => ({
   
 
   banner: {
-    backgroundImage: 'url(https://images-squirfox.imgix.net/banneroff21.png)',
+    backgroundImage: 'url(https://res.cloudinary.com/squirfox-com/image/upload/f_auto,q_100/v1647891339/banneroff21_ukmwdc.png)',
     backgroundSize: 'cover',
     objectFit: 'contain',
     width: '100%',
@@ -40,7 +40,7 @@ const useStyles = makeStyles(() => ({
   
   },
   content: {
-    backgroundImage: 'url(https://images-squirfox.imgix.net/yearone-1vyT0nfGK3k-unsplash.jpg)',
+    backgroundImage: 'url(https://res.cloudinary.com/squirfox-com/image/upload/dpr_4.0,f_auto,fl_fast_scale.force_dpi,q_auto/v1647891636/yearone-1vyT0nfGK3k-unsplash_uz5gd5.jpg)',
     backgroundSize: 'cover',
     objectFit: 'contain',
     width: '100%',
@@ -68,7 +68,7 @@ export default function Home() {
   const styles = useStyles();
   return (
     <Layout>
-      <BackgroundImage className={styles.banner} fluid='https://images-squirfox.imgix.net/banneroff21.png'>
+      <BackgroundImage className={styles.banner} fluid='https://res.cloudinary.com/squirfox-com/image/upload/f_auto,q_100/v1647891339/banneroff21_ukmwdc.png'>
         <div className={styles.overlay}>
           <Container maxWidth='lg'>
               <Typography className={styles.header} component= 'h1' variant='h2' sx={{root: {xs: 'h4'}}}>
@@ -89,7 +89,7 @@ export default function Home() {
       </BackgroundImage>
       <Divider sx={{backgroundColor: 'black'}}/>
       
-      <BackgroundImage className={styles.content} fluid='https://images-squirfox.imgix.net/yearone-1vyT0nfGK3k-unsplash.jpg'>
+      <BackgroundImage className={styles.content} fluid='https://res.cloudinary.com/squirfox-com/image/upload/dpr_4.0,f_auto,fl_fast_scale.force_dpi,q_auto/v1647891636/yearone-1vyT0nfGK3k-unsplash_uz5gd5.jpg'>
         <div className={styles.overlayContent}>
             <Container  maxWidth='lg' >
                   <Grid container spacing={4} direction='column' justifyContent='space-around' alignItems='left'>
