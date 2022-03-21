@@ -16,7 +16,7 @@ const useStyles = makeStyles(() => ({
   
 
   banner: {
-    backgroundImage: 'url(https://stefan-test-2021.s3.eu-west-1.amazonaws.com/office21/banneroff21.png)',
+    backgroundImage: 'url(https://images-squirfox.imgix.net/banneroff21.png)',
     backgroundSize: 'cover',
     objectFit: 'contain',
     width: '100%',
@@ -40,7 +40,7 @@ const useStyles = makeStyles(() => ({
   
   },
   content: {
-    backgroundImage: 'url(https://stefan-test-2021.s3.eu-west-1.amazonaws.com/office21/yearone-1vyT0nfGK3k-unsplash.jpg)',
+    backgroundImage: 'url(https://images-squirfox.imgix.net/yearone-1vyT0nfGK3k-unsplash.jpg)',
     backgroundSize: 'cover',
     objectFit: 'contain',
     width: '100%',
@@ -68,7 +68,7 @@ export default function Home() {
   const styles = useStyles();
   return (
     <Layout>
-      <BackgroundImage className={styles.banner} fluid='https://stefan-test-2021.s3.eu-west-1.amazonaws.com/office21/banneroff21.png'>
+      <BackgroundImage className={styles.banner} fluid='https://images-squirfox.imgix.net/banneroff21.png'>
         <div className={styles.overlay}>
           <Container maxWidth='lg'>
               <Typography className={styles.header} component= 'h1' variant='h2' sx={{root: {xs: 'h4'}}}>
@@ -88,10 +88,8 @@ export default function Home() {
         </div>
       </BackgroundImage>
       <Divider sx={{backgroundColor: 'black'}}/>
-
-
-
-      <BackgroundImage className={styles.content} fluid='https://stefan-test-2021.s3.eu-west-1.amazonaws.com/office21/yearone-1vyT0nfGK3k-unsplash.jpg'>
+      
+      <BackgroundImage className={styles.content} fluid='https://images-squirfox.imgix.net/yearone-1vyT0nfGK3k-unsplash.jpg'>
         <div className={styles.overlayContent}>
             <Container  maxWidth='lg' >
                   <Grid container spacing={4} direction='column' justifyContent='space-around' alignItems='left'>

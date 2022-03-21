@@ -38,7 +38,8 @@
     "hamburger-react": "^2.4.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-imgix": "^9.5.0"
   },
   "devDependencies": {
     "gatsby-plugin-netlify": "^4.1.0"
