@@ -4,8 +4,18 @@ import { makeStyles } from '@mui/styles';
 import { Box } from '@mui/system';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Typography, Divider} from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material';
+import './Layout.css';
 
-
+const theme = createTheme({
+    
+      typography: {
+        h2: {
+            fontFamily: 'Abril Fatface',
+          },
+        fontFamily: 'Montserrat',
+      },
+})
 
 const useStyle = makeStyles(() =>({
     footer: {
@@ -23,17 +33,19 @@ const useStyle = makeStyles(() =>({
 export default function Layout({children}) {
     const styles = useStyle();
   return (
-        <CssBaseline>
-            <Box component='body' maxWidth='xl' className={styles.layout}>
-                <Navbar/>
-                <div>
-                    {children}
-                </div>
-                <Divider sx={{backgroundColor:'black'}}/>
-                <footer className={styles.footer}>
-                    <Typography variant='h5' component='p'>© 2022 Squirfox - All Rights Reserved</Typography>
-                </footer>
-            </Box>
-        </CssBaseline>
+        <ThemeProvider theme={theme}>
+            <CssBaseline>
+                <Box component='body' maxWidth='xl' className={styles.layout}>
+                    <Navbar/>
+                    <div>
+                        {children}
+                    </div>
+                    <Divider sx={{backgroundColor:'black'}}/>
+                    <footer className={styles.footer}>
+                        <Typography variant='h5' component='p'>© 2022 Squirfox - All Rights Reserved</Typography>
+                    </footer>
+                </Box>
+            </CssBaseline>
+        </ThemeProvider>
   )
 }

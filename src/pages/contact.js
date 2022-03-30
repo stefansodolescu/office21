@@ -32,28 +32,28 @@ export default function Contact() {
         <Grid container spacing={4} direction={{xs:'column', md:'row'}} alignItems='left' justifyContent='space-around'>
           <Grid item xs={12} sx={{textAlign: 'center'}}>
             <Paper className={styles.paper} elevation={24} variant='outlined' sx={{backgroundColor: 'black', color:'white'}}>
-              <Typography variant='h4'>Contact us</Typography>
+              <Typography component='h1' variant='h4'>Contact:</Typography>
             </Paper>
           </Grid>
           <Grid item xs>
             <Box>
               <Typography component='h6' variant='h6' sx={{fontWeight:700}}>
-              <IconButton href='https://wa.me/767921555'  size='large'>
+              <IconButton href='https://wa.me/767921555' target='_blank'  size='large'>
                     <WhatsAppIcon color='success' sx={{fontSize:40}}/>
                 </IconButton>
-                Telefon:<Typography variant='subtitle1' component='p'><Link underline='hover' href='tel:0767921555' sx={{color: 'black'}}>0767921555</Link></Typography>
+                Telefon:<Typography variant='subtitle1' component='p'><Link underline='hover' href='tel:0767921555' target='_blank' sx={{color: 'black'}}>0767921555</Link></Typography>
               </Typography>
               <Typography component='h6' variant='h6' sx={{fontWeight:700}}>  
-                <IconButton href= 'https://ul.waze.com/ul?place=ChIJGaHc6LgBskARx7xzfiEQo5E&ll=44.45101810%2C26.05478720&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location' size='large'>
+                <IconButton href= 'https://ul.waze.com/ul?place=ChIJGaHc6LgBskARx7xzfiEQo5E&ll=44.45101810%2C26.05478720&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location' target='_blank' size='large'>
                     <StaticImage style={{height:'40px', width: '40px'}}src='https://stefan-test-2021.s3.eu-west-1.amazonaws.com/office21/icons/waze(2).png' alt='waze icon'/>
                 </IconButton>
-                Adresa:<Typography variant='subtitle1' component='p'>Strada Inginer Cristian Pascal 34, București</Typography>
+                Adresa:<Typography variant='subtitle1' component='p'><Link underline='hover' href='https://ul.waze.com/ul?place=ChIJGaHc6LgBskARx7xzfiEQo5E&ll=44.45101810%2C26.05478720&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location' target='_blank' sx={{color: 'black'}}>Strada Inginer Cristian Pascal 34, București</Link></Typography>
               </Typography>
               <Typography component='h6' variant='h6' sx={{fontWeight:700}}>
-              <IconButton href='mailto:contact@office21.ro' size='large'>
+              <IconButton href='mailto:contact@office21.ro' target='_blank' size='large'>
                     <EmailIcon sx={{fontSize: 40, color: 'black'}}/>
                 </IconButton>
-                Email:<Typography variant='body1' component='p'>contact@office21.ro</Typography>
+                E-mail:<Typography variant='body1' component='p'><Link underline='hover' href='mailto:contact@office21.ro' target='_blank' sx={{color: 'black'}}>contact@office21.ro</Link></Typography>
               </Typography>
             </Box>
           </Grid>
@@ -65,10 +65,10 @@ export default function Contact() {
               <Typography component='h6' variant='h6' sx={{fontWeight:700}}>Duminica:<Typography variant='subtitle1' component='p'>Inchis</Typography></Typography>
               <Typography component='h6' variant='h6' sx={{fontWeight:700}}>Urmareste-ne pe:</Typography>
               <ButtonGroup>
-                <IconButton href='https://www.facebook.com/office21barbershop/' size='large'>
+                <IconButton href='https://www.facebook.com/office21barbershop/' target='_blank' size='large'>
                   <FacebookIcon color='primary' sx={{fontSize: 40}}/>
                 </IconButton>
-                <IconButton href='https://www.instagram.com/office21barber/' size='large'>
+                <IconButton href='https://www.instagram.com/office21barber/' size='large' target='_blank'>
                   <InstagramIcon color='secondary' sx={{fontSize: 40}}/>
                 </IconButton>
               </ButtonGroup>
@@ -76,6 +76,7 @@ export default function Contact() {
           </Grid>
           <Grid item xs={12}>
           <Box
+              maxWidth='lg'
               display="flex"
               justifyContent="center"
               alignItems="center">
