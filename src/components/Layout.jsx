@@ -4,12 +4,17 @@ import { makeStyles } from '@mui/styles';
 import { Box } from '@mui/system';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Typography, Divider} from '@mui/material';
-import { createTheme, ThemeProvider } from '@mui/material';
+import { createTheme, ThemeProvider, } from '@mui/material';
 import './Layout.css';
 
 const theme = createTheme({
+    palette: {
+        background: {
+            default: '#000000',
+          },
+        },
     
-      typography: {
+    typography: {
         h2: {
             fontFamily: 'Abril Fatface',
           },

@@ -32,7 +32,7 @@ export default function Contact() {
         <Grid container spacing={4} direction={{xs:'column', md:'row'}} alignItems='left' justifyContent='space-around'>
           <Grid item xs={12} sx={{textAlign: 'center'}}>
             <Paper className={styles.paper} elevation={24} variant='outlined' sx={{backgroundColor: 'black', color:'white'}}>
-              <Typography component='h1' variant='h4'>Contact:</Typography>
+              <Typography component='h1' variant='h4'>Contact</Typography>
             </Paper>
           </Grid>
           <Grid item xs>

@@ -38,7 +38,7 @@ const [isOpen, setOpen] = useState(false)
                         <StaticImage alt="logo" src ='https://stefan-test-2021.s3.eu-west-1.amazonaws.com/office21/logooffice.png'/>
                     </Link>
                 </Avatar> 
-                <Hidden smDown>
+                <Hidden mdDown>
                 {navigationLinks.map((item) => (
                     <Link sx={{
                         mr: 3,
@@ -55,7 +55,7 @@ const [isOpen, setOpen] = useState(false)
                         </Link>
                 ))}
                 </Hidden>
-                <Hidden smUp>
+                <Hidden mdUp>
                     <Hamburger toggled={isOpen} toggle={setOpen} 
                         onToggle={toggled => {
                             if (toggled) {
@@ -86,7 +86,7 @@ const [isOpen, setOpen] = useState(false)
                                 href={item.href}
                                 >
                                 <Typography
-                                variant='h5'
+                                variant='h4'
                                 align='center'>
                                 {item.name}
                                 </Typography>
