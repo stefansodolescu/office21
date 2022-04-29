@@ -10,7 +10,7 @@ import './Layout.css';
 const theme = createTheme({
     palette: {
         background: {
-            default: '#000000',
+            default: 'black',
           },
         },
     

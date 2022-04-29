@@ -37,33 +37,33 @@ export default function Contact() {
           </Grid>
           <Grid item xs>
             <Box>
-              <Typography component='h6' variant='h6' sx={{fontWeight:700}}>
+              <Typography component='h6' variant='h5' sx={{fontWeight:700}}>
               <IconButton href='https://wa.me/767921555' target='_blank'  size='large'>
                     <WhatsAppIcon color='success' sx={{fontSize:40}}/>
                 </IconButton>
-                Telefon:<Typography variant='subtitle1' component='p'><Link underline='hover' href='tel:0767921555' target='_blank' sx={{color: 'black'}}>0767921555</Link></Typography>
+                Telefon:<Typography variant='h6' component='p'><Link underline='hover' href='tel:0767921555' target='_blank' sx={{color: 'black'}}>0767921555</Link></Typography>
               </Typography>
-              <Typography component='h6' variant='h6' sx={{fontWeight:700}}>  
+              <Typography component='h6' variant='h5' sx={{fontWeight:700}}>  
                 <IconButton href= 'https://ul.waze.com/ul?place=ChIJGaHc6LgBskARx7xzfiEQo5E&ll=44.45101810%2C26.05478720&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location' target='_blank' size='large'>
                     <StaticImage style={{height:'40px', width: '40px'}}src='https://stefan-test-2021.s3.eu-west-1.amazonaws.com/office21/icons/waze(2).png' alt='waze icon'/>
                 </IconButton>
-                Adresa:<Typography variant='subtitle1' component='p'><Link underline='hover' href='https://ul.waze.com/ul?place=ChIJGaHc6LgBskARx7xzfiEQo5E&ll=44.45101810%2C26.05478720&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location' target='_blank' sx={{color: 'black'}}>Strada Inginer Cristian Pascal 34, București</Link></Typography>
+                Adresa:<Typography variant='h6' component='p'><Link underline='hover' href='https://ul.waze.com/ul?place=ChIJGaHc6LgBskARx7xzfiEQo5E&ll=44.45101810%2C26.05478720&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location' target='_blank' sx={{color: 'black'}}>Strada Inginer Cristian Pascal 34, București</Link></Typography>
               </Typography>
-              <Typography component='h6' variant='h6' sx={{fontWeight:700}}>
+              <Typography component='h6' variant='h5' sx={{fontWeight:700}}>
               <IconButton href='mailto:contact@office21.ro' target='_blank' size='large'>
                     <EmailIcon sx={{fontSize: 40, color: 'black'}}/>
                 </IconButton>
-                E-mail:<Typography variant='body1' component='p'><Link underline='hover' href='mailto:contact@office21.ro' target='_blank' sx={{color: 'black'}}>contact@office21.ro</Link></Typography>
+                E-mail:<Typography variant='h6' component='p'><Link underline='hover' href='mailto:contact@office21.ro' target='_blank' sx={{color: 'black'}}>contact@office21.ro</Link></Typography>
               </Typography>
             </Box>
           </Grid>
           <Grid item xs>
             <Box>
-              <Typography component='h6' variant='h6' sx={{fontWeight:700}}>Program:</Typography>
-              <Typography component='h6' variant='h6' sx={{fontWeight:700}}>Luni-Vineri:<Typography variant='subtitle1' component='p'>10:00-22:00</Typography></Typography>
-              <Typography component='h6' variant='h6' sx={{fontWeight:700}}>Sambata:<Typography variant='subtitle1' component='p'>10:00-18:00</Typography></Typography>
-              <Typography component='h6' variant='h6' sx={{fontWeight:700}}>Duminica:<Typography variant='subtitle1' component='p'>Inchis</Typography></Typography>
-              <Typography component='h6' variant='h6' sx={{fontWeight:700}}>Urmareste-ne pe:</Typography>
+              <Typography component='h6' variant='h5' sx={{fontWeight:700}}>Program:</Typography>
+              <Typography component='h6' variant='h5' sx={{fontWeight:700}}>Luni-Vineri:<Typography variant='h6' component='p'>10:00-22:00</Typography></Typography>
+              <Typography component='h6' variant='h5' sx={{fontWeight:700}}>Sambata:<Typography variant='h6' component='p'>10:00-18:00</Typography></Typography>
+              <Typography component='h6' variant='h5' sx={{fontWeight:700}}>Duminica:<Typography variant='h6' component='p'>Inchis</Typography></Typography>
+              <Typography component='h6' variant='h5' sx={{fontWeight:700}}>Urmareste-ne pe:</Typography>
               <ButtonGroup>
                 <IconButton href='https://www.facebook.com/office21barbershop/' target='_blank' size='large'>
                   <FacebookIcon color='primary' sx={{fontSize: 40}}/>
