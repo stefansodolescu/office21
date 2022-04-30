@@ -42,11 +42,13 @@ export default function Prices() {
             </Typography>
           </Grid>  
           <Grid item xs={8}>
-          <Container maxWidth='lg' sx={{backgroundColor:'white', padding:'20px'}}>
+          </Grid>  
+          <Grid item xs={12}>
+          <Container maxWidth='lg' sx={{ padding:'20px'}}>
           <SimpleReactLightbox>
             <Container maxWidth='xl'>
                     <SRLWrapper options={options}>
-                      <Box maxWidth='lg' sx={{ height: '300px', overflowY: 'scroll'}}>
+                      <Box maxWidth='lg' sx={{ height: '600px', overflowY: 'scroll'}}>
                         <ImageList variant="masonry" cols={3} gap={8}>
                           {itemData.map((item) => (
                             <ImageListItem key={item.img} sx={{border: '4px solid', borderRadius: '8px'}}>
