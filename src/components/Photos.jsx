@@ -1,27 +1,27 @@
 import React from 'react'
-import Layout from '../components/Layout'
-import { ImageList, ImageListItem, Box, Container, Typography} from '@mui/material'
+import { ImageList, ImageListItem, Box, Container, Typography, Grid, Paper, Divider} from '@mui/material'
 import { makeStyles } from '@mui/styles'
-import { StaticImage } from 'gatsby-plugin-image'
 import SimpleReactLightbox from 'simple-react-lightbox'
 import { SRLWrapper } from "simple-react-lightbox";
 
 const useStyles = makeStyles(() => ({
-
-  gallery: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-
+    skewed: {
+      position: 'absolute',
+      top: '0',
+      right: '0',
+      bottom: '0',
+      left: '0',
+      width: '100%',
+      height: '50%',
+      background: 'pink',
+      zIndex: '0',
+      transform: 'skewY(8deg)',
+      transformOrigin: 'top right',
   },
-
-
-
 
 }))
 
-export default function Photos() {
+export default function Prices() {
   const styles = useStyles()
   const options = {
 
@@ -30,39 +30,51 @@ export default function Photos() {
     }
   }
   return (
-    <Layout >
-      <SimpleReactLightbox>
-          <Box sx={{backgroundColor:'white'}}>
-            <Container maxWidth='lg' sx={{padding: '40px', backgroundColor: 'white'}}>
-            <Box maxWidth='xs' disableGutters className={styles.gallery}>
-              <Typography component='h1' variant='h4' textAlign='center' disableGutters fontWeight='500'>Galerie</Typography>
-            </Box>
-              <Box my={5} disableGutters sx={{ width: '100%', height: '100%', overflowY: 'scroll'}}>
-                <SRLWrapper options={options}>
-                  <ImageList variant="masonry" cols={3} gap={8}>
-                    {itemData.map((item) => (
-                      <ImageListItem key={item.img} sx={{border: '4px solid', borderRadius: '8px'}}>
-                        <img
-                          src={`${item.img}?w=1024&h=768&fit=clip&auto=format&auto=compress&auto=enhance`}
-                          srcSet={ `${item.img}?w=248&fit=clip&auto=format&auto=compress&auto=enhance&dpr=1 1x
-                                    ${item.img}?w=248&fit=clip&auto=format&auto=compress&auto=enhance&q=40&dpr=2 2x,
-                                    ${item.img}?w=248&fit=clip&auto=format&auto=compress&auto=enhance&q=20&dpr=3 3x`}
-                          alt="gallery"
-                          loading='lazy'
-                        />
-                      </ImageListItem>
-                    ))}
-                  </ImageList>
-                </SRLWrapper>
-              </Box>
-          </Container>
-        </Box>
-      </SimpleReactLightbox>
-    </Layout>
+    <Box>
+      <br></br>
+      <Divider sx={{backgroundColor: 'red', height:'5px', width: '15%'}}/>        
+      <br></br>
+      <Container maxWidth='lg'>
+        <Grid container spacing={4}   justifyContent="center" alignItems="left">
+          <Grid item xs={4}>
+            <Typography component='h2' variant='h4' color='white'>
+              Galerie
+            </Typography>
+          </Grid>  
+          <Grid item xs={8}>
+          <Container maxWidth='lg' sx={{backgroundColor:'white', padding:'20px'}}>
+          <SimpleReactLightbox>
+            <Container maxWidth='xl'>
+                    <SRLWrapper options={options}>
+                      <Box maxWidth='lg' sx={{ height: '600px', overflowY: 'scroll'}}>
+                        <ImageList variant="masonry" cols={3} gap={8}>
+                          {itemData.map((item) => (
+                            <ImageListItem key={item.img} sx={{border: '4px solid', borderRadius: '8px'}}>
+                              <img
+                                src={`${item.img}?w=1024&h=768&fit=clip&auto=format&auto=compress&auto=enhance`}
+                                srcSet={ `${item.img}?w=248&fit=clip&auto=format&auto=compress&auto=enhance&dpr=1 1x
+                                          ${item.img}?w=248&fit=clip&auto=format&auto=compress&auto=enhance&q=40&dpr=2 2x,
+                                          ${item.img}?w=248&fit=clip&auto=format&auto=compress&auto=enhance&q=20&dpr=3 3x`}
+                                alt="gallery"
+                                loading='lazy'
+                              />
+                            </ImageListItem>
+                          ))}
+                        </ImageList>
+                      </Box>
+                    </SRLWrapper>
+            </Container>
+          </SimpleReactLightbox>
+        </Container>
+          </Grid> 
+        </Grid>    
+      </Container>  
+    </Box>
 
 
   )
 }
+
 
 const itemData = [
   {
