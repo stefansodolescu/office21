@@ -15,6 +15,7 @@ export default function Home() {
     <Layout>
       <Helmet>
         <title>Office21Barber</title>
+        <meta name="google-site-verification" content="4-EJC3jUsjgxz8tzvU_mjMoAAzvYXojrqpWvDONUqeo" />
         <meta name="description" 
         content='Office21 Barbershop este o frizerie situata in Sectorul 6, Bucuresti, in zona Crangasi. Noi înțelegem că ai o singură șansă să faci o buna primă impresie, 
               asa ca am alcatuit un grup de cei mai buni hairstylisti, o locație frumoasă, o atmosferă uimitoare si un loc în care pe lângă tunsoarea excelentă, va veti bucura si de o experienta relaxanta, pentru ca nimic nu face o zi mai perfectă decât o tunsoare.'/>
