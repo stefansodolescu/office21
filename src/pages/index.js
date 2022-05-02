@@ -4,39 +4,37 @@ import Photos from '../components/Photos'
 import Hero from '../components/Hero'
 import Prices from '../components/Prices'
 import Contact from '../components/Contact'
-import { makeStyles } from '@mui/styles'
-import { Divider } from '@mui/material'
-
-
-const useStyles = makeStyles(() => ({
-
-  skewed: {
-    width: '100%',
-    height: '50px',
-    background: 'white',
-    transform: 'skewY(4deg)',
-    transformOrigin: 'top right',
-    zIndex: '0'
-},
-
-
-}))
-
-
-
+import Team from '../components/Team'
+import { Helmet } from 'react-helmet'
 
 
 
 
 export default function Home() {
-  const styles = useStyles()
   return (
     <Layout>
+      <Helmet>
+        <title>Office21Barber</title>
+        <meta name="description" 
+        content='Office21 Barbershop este o frizerie situata in Sectorul 6, Bucuresti, in zona Crangasi. Noi înțelegem că ai o singură șansă să faci o buna primă impresie, 
+              asa ca am alcatuit un grup de cei mai buni hairstylisti, o locație frumoasă, o atmosferă uimitoare si un loc în care pe lângă tunsoarea excelentă, va veti bucura si de o experienta relaxanta, pentru ca nimic nu face o zi mai perfectă decât o tunsoare.'/>
+        <meta name='keywords' content='tunsoare, frizerie, sector 6, regie, crangasi, barba, vopsit, tuns, aranjat, barbershop, bucuresti'/>
+        <meta property='og:title' content='Office21Barber'/>
+        <meta property='og:type' content='website'/>
+        <meta property='og:description' 
+        content='Office21 Barbershop este o frizerie situata in Sectorul 6, Bucuresti, in zona Crangasi. Noi înțelegem că ai o singură șansă să faci o buna primă impresie, 
+              asa ca am alcatuit un grup de cei mai buni hairstylisti, o locație frumoasă, o atmosferă uimitoare si un loc în care pe lângă tunsoarea excelentă, va veti bucura si de o experienta relaxanta, pentru ca nimic nu face o zi mai perfectă decât o tunsoare.'/>
+        <meta property='og:image' content='https://stefan-test-2021.s3.eu-west-1.amazonaws.com/office21/logooffice.png'/>
+        <meta property='og:locale' content='ro_RO'/>
+        <meta property='og:url' content='https://www.office21barber.ro'/>
+        <link rel='canonical' href='https://www.office21barber.ro'/>
+      </Helmet>
       <Hero/>
-      <Prices/>
-      <br></br>
       <Photos/>
       <br></br>
+      <Team/>
+      <br></br>
+      <Prices/>
       <Contact/>
       <br></br>
     </Layout>

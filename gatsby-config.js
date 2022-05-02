@@ -5,7 +5,7 @@ module.exports = {
       title: `Office21 Barbershop`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-emotion", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", "gatsby-background-image", 'gatsby-plugin-netlify',{
+  plugins: ["gatsby-plugin-emotion", "gatsby-plugin-anchor-links","gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", "gatsby-background-image", 'gatsby-plugin-netlify',{
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
@@ -45,6 +45,12 @@ module.exports = {
       sourceType: ImgixSourceType.WebProxy,
 
     },
+  },
+  {
+    resolve: "gatsby-plugin-anchor-links",
+    options: {
+      offset: -100
+    }
   },
 ]
 };

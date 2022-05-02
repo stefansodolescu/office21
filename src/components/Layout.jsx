@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import { makeStyles } from '@mui/styles';
 import { Box } from '@mui/system';
 import CssBaseline from '@mui/material/CssBaseline';
-import { Typography, Divider} from '@mui/material';
+import { Typography, Divider, Link} from '@mui/material';
 import { createTheme, ThemeProvider, } from '@mui/material';
 import './Layout.css';
 
@@ -47,7 +47,9 @@ export default function Layout({children}) {
                     </div>
                     <Divider sx={{backgroundColor:'black'}}/>
                     <footer className={styles.footer}>
-                        <Typography variant='h5' component='p'>© 2022 Squirfox - All Rights Reserved</Typography>
+                        <Typography variant='h5' component='p'>
+                        © 2022 <Link sx={{color:'#D3D3D3'}} underline="hover" target='_blank' href='http://squirfox.com'>Squirfox</Link> - All Rights Reserved
+                        </Typography>
                     </footer>
                 </Box>
             </CssBaseline>

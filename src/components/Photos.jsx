@@ -1,28 +1,11 @@
 import React from 'react'
-import { ImageList, ImageListItem, Box, Container, Typography, Grid, Paper, Divider} from '@mui/material'
-import { makeStyles } from '@mui/styles'
+import { ImageList, ImageListItem, Box, Container, Typography, Grid, Divider} from '@mui/material'
 import SimpleReactLightbox from 'simple-react-lightbox'
 import { SRLWrapper } from "simple-react-lightbox";
 
-const useStyles = makeStyles(() => ({
-    skewed: {
-      position: 'absolute',
-      top: '0',
-      right: '0',
-      bottom: '0',
-      left: '0',
-      width: '100%',
-      height: '50%',
-      background: 'pink',
-      zIndex: '0',
-      transform: 'skewY(8deg)',
-      transformOrigin: 'top right',
-  },
 
-}))
 
 export default function Prices() {
-  const styles = useStyles()
   const options = {
 
     caption: {
@@ -30,7 +13,7 @@ export default function Prices() {
     }
   }
   return (
-    <Box>
+    <Box id='gallery'>
       <br></br>
       <Divider sx={{backgroundColor: 'red', height:'5px', width: '15%'}}/>        
       <br></br>
